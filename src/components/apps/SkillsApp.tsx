@@ -34,7 +34,7 @@ export function SkillsApp() {
 
   return (
     <div className="h-full overflow-y-auto bg-black/60 p-5 font-mono text-[13px] text-zinc-200">
-      <p className="text-emerald-400">
+      <p className="text-red-400">
         <span className="text-zinc-500">koppesh@portfolio</span>
         <span className="text-zinc-600">:~$</span> {typed}
         {!done && <span className="animate-pulse">▍</span>}
@@ -50,12 +50,12 @@ export function SkillsApp() {
               delay: revealDelay + index * CATEGORY_STAGGER_S,
             }}
           >
-            <p className="text-zinc-500"># {category.label}</p>
+            <p className="text-red-400/80 font-semibold"># {category.label}</p>
             <p className="mt-1 flex flex-wrap gap-1.5">
               {category.items.map((item) => (
                 <span
                   key={item}
-                  className="rounded bg-white/5 px-1.5 py-0.5 text-emerald-300/90"
+                  className="rounded border border-red-500/30 bg-red-950/40 px-2 py-0.5 text-red-200"
                 >
                   {item}
                 </span>

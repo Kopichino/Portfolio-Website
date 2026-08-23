@@ -92,7 +92,7 @@ export function PortfolioExperience() {
               delay: transition === "covering" ? 0.2 : 0,
             }}
           >
-            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-400 to-indigo-500 text-lg font-bold text-white shadow-lg shadow-sky-500/30">
+            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-red-500 to-rose-600 text-lg font-bold text-white shadow-lg shadow-red-500/30">
               KP
             </span>
             <span className="h-6 w-6 animate-spin rounded-full border-2 border-white/20 border-t-white" />

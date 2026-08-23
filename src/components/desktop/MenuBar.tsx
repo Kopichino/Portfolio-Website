@@ -84,7 +84,7 @@ export function MenuBar() {
                       openWindow(item.appId);
                       setUiOverlay("none");
                     }}
-                    className="block w-full px-3 py-1.5 text-left text-white/90 hover:bg-sky-500/30"
+                    className="block w-full px-3 py-1.5 text-left text-white/90 hover:bg-red-500/30"
                   >
                     {item.label}
                   </button>
@@ -96,7 +96,7 @@ export function MenuBar() {
                     requestLock();
                     setUiOverlay("none");
                   }}
-                  className="flex w-full items-center gap-2 px-3 py-1.5 text-left text-white/90 hover:bg-sky-500/30"
+                  className="flex w-full items-center gap-2 px-3 py-1.5 text-left text-white/90 hover:bg-red-500/30"
                 >
                   <Lock className="h-3.5 w-3.5" />
                   Lock Screen
@@ -104,7 +104,7 @@ export function MenuBar() {
                 <button
                   type="button"
                   onClick={() => window.location.reload()}
-                  className="flex w-full items-center gap-2 px-3 py-1.5 text-left text-white/90 hover:bg-sky-500/30"
+                  className="flex w-full items-center gap-2 px-3 py-1.5 text-left text-white/90 hover:bg-red-500/30"
                 >
                   <RotateCcw className="h-3.5 w-3.5" />
                   Restart Portfolio

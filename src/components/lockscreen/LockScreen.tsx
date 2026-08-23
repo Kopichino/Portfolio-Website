@@ -98,7 +98,7 @@ export function LockScreen({ onUnlocked }: LockScreenProps) {
           {/* Placeholder avatar — swap for the user's real photo once
               provided (see PROGRESS.md); a generic silhouette on the site's
               existing sky/indigo gradient reads as intentional, not broken. */}
-          <div className="flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-sky-400 to-indigo-500 ring-2 ring-white/25 shadow-2xl sm:h-28 sm:w-28">
+          <div className="flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-red-500 to-rose-600 ring-2 ring-red-400/30 shadow-2xl shadow-red-600/30 sm:h-28 sm:w-28">
             <User className="h-12 w-12 text-white/90 sm:h-14 sm:w-14" strokeWidth={1.5} />
           </div>
           <p className={`${robotoCondensed.className} mt-3 text-lg font-bold tracking-wide sm:text-xl`}>

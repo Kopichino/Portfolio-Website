@@ -5,7 +5,7 @@ import { useDesktopStore } from "@/lib/window-manager/store";
 import { cn } from "@/lib/utils";
 import { MenuBar } from "./MenuBar";
 import { Dock } from "./Dock";
-import { TilingLayout } from "./TilingLayout";
+import { FloatingLayout } from "./FloatingLayout";
 import { DesktopWallpaper } from "./DesktopWallpaper";
 import { DesktopIcons } from "./DesktopIcons";
 import { ControlCenter } from "./ControlCenter";
@@ -65,7 +65,7 @@ export function Desktop({ active }: DesktopProps) {
       <DesktopIcons />
       <WidgetStack />
       <MenuBar />
-      <TilingLayout />
+      <FloatingLayout />
       <Dock />
       <ControlCenter />
       <SpotlightSearch />

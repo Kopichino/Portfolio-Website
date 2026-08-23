@@ -23,7 +23,7 @@ export function ClockWidget() {
     : "";
 
   return (
-    <div className="w-44 rounded-2xl border border-white/15 bg-white/10 p-4 shadow-xl backdrop-blur-2xl">
+    <div className="w-44 rounded-2xl border border-red-500/30 bg-black/60 p-4 shadow-xl shadow-red-600/10 backdrop-blur-2xl">
       <p className="text-4xl font-semibold tabular-nums text-white">{time || " "}</p>
       <p className="mt-1 text-sm text-white/70">
         {day}

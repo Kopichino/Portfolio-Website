@@ -5,7 +5,7 @@ import { GithubIcon, LinkedinIcon } from "@/components/icons/BrandIcons";
 export function AboutApp() {
   return (
     <div className="flex h-full flex-col items-center gap-4 overflow-y-auto p-8 text-center text-zinc-200">
-      <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-sky-400 to-indigo-500 text-2xl font-semibold text-white">
+      <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-red-500 to-rose-600 text-2xl font-semibold text-white shadow-lg shadow-red-600/30">
         {profile.name
           .split(" ")
           .map((part) => part[0])

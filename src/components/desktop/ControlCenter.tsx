@@ -68,7 +68,7 @@ export function ControlCenter() {
                   className={cn(
                     "flex flex-col items-center gap-1.5 rounded-xl border py-3 text-xs transition-colors",
                     active
-                      ? "border-sky-400/30 bg-sky-500/80 text-white"
+                      ? "border-red-500/40 bg-red-600/80 text-white shadow-sm shadow-red-600/40"
                       : "border-white/10 bg-white/10 text-white/70 hover:bg-white/15",
                   )}
                 >

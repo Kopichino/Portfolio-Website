@@ -9,7 +9,7 @@ export function ResumeApp() {
         <a
           href={profile.resumePdfUrl}
           download
-          className="flex items-center gap-1.5 rounded-md bg-white/10 px-3 py-1.5 text-xs font-medium text-white hover:bg-white/15"
+          className="flex items-center gap-1.5 rounded-md bg-red-600 px-3 py-1.5 text-xs font-medium text-white hover:bg-red-500 shadow-md shadow-red-600/30"
         >
           <Download className="h-3.5 w-3.5" />
           Download

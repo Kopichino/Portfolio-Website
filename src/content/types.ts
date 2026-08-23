@@ -19,6 +19,7 @@ export interface EducationEntry {
   detail: string;
   years: string;
   highlights: string[];
+  image?: string;
 }
 
 export interface ExperienceEntry {
@@ -27,6 +28,7 @@ export interface ExperienceEntry {
   company: string;
   dates: string;
   bullets: string[];
+  image?: string;
 }
 
 export interface ProjectEntry {
@@ -37,6 +39,7 @@ export interface ProjectEntry {
   bullets: string[];
   tech: string[];
   repo: string;
+  image?: string;
 }
 
 export interface SkillCategory {
@@ -49,4 +52,5 @@ export interface CertificationEntry {
   id: string;
   title: string;
   issuer: string;
+  image?: string;
 }
