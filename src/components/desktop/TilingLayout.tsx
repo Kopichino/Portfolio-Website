@@ -104,7 +104,7 @@ export function TilingLayout() {
     // (pointer-events-auto below) opt back in explicitly.
     <div
       ref={containerRef}
-      className="pointer-events-none absolute left-4 right-4 top-10 bottom-24"
+      className="pointer-events-none absolute left-4 right-4 top-10 bottom-24 z-20"
     >
       <AnimatePresence>
         {tileOrder.map((id) => {

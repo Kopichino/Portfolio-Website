@@ -48,17 +48,14 @@ export function Window({ appDef, rect, hidden }: WindowProps) {
         width: `calc(${rect.width}% - ${GAP * 2}px)`,
         height: `calc(${rect.height}% - ${GAP * 2}px)`,
         pointerEvents: hidden ? "none" : "auto",
+        zIndex: isFocused ? 30 : 10,
       }}
       className={cn(
-        // bg opacity is deliberately high (not the usual glass 30-40%) — a
-        // brighter wallpaper region behind a lighter tint was washing out
-        // title/content text; this keeps text legible regardless of what's
-        // behind the window.
-        "flex flex-col overflow-hidden rounded-xl border bg-zinc-900/75 shadow-2xl shadow-black/60 backdrop-blur-2xl backdrop-saturate-150",
+        "flex flex-col overflow-hidden rounded-xl border bg-zinc-950/90 shadow-2xl shadow-black/90 backdrop-blur-2xl backdrop-saturate-150",
         "shadow-[inset_0_1px_0_0_rgba(255,255,255,0.12)]",
         isFocused
-          ? "border-white/20 ring-1 ring-sky-400/20 shadow-[0_0_50px_-15px_rgba(56,189,248,0.35)]"
-          : "border-white/10 opacity-[0.94]",
+          ? "border-red-500/40 ring-1 ring-red-500/30 shadow-[0_0_50px_-10px_rgba(239,68,68,0.4)]"
+          : "border-white/10 opacity-[0.96]",
       )}
     >
       <WindowTitleBar

@@ -78,30 +78,37 @@ export function IntroSection({ onAdvance }: IntroSectionProps) {
     <div className="fixed inset-0 z-[9000] flex flex-col items-center justify-center overflow-hidden bg-black text-white">
       <StarfieldBackground />
 
+      {/* Cybernetic ambient red aura */}
+      <div className="pointer-events-none absolute h-96 w-96 rounded-full bg-gradient-to-tr from-red-600/20 via-rose-600/20 to-amber-600/20 blur-3xl animate-pulse" />
+
       <div className="relative z-10 flex flex-col items-center px-6 text-center">
-        <motion.p
+        <motion.div
           {...riseIn(0)}
-          className={`${robotoCondensed.className} text-xs font-medium uppercase tracking-[0.3em] text-sky-300/80 sm:text-sm`}
+          className="mb-3 flex items-center gap-2 rounded-full border border-red-500/40 bg-red-950/40 px-3.5 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-red-300 backdrop-blur-md shadow-md shadow-red-500/20"
         >
-          Welcome to my Portfolio
-        </motion.p>
+          <span className="h-2 w-2 animate-ping rounded-full bg-emerald-400" />
+          <span>Interactive PC Portfolio &middot; VIT Chennai</span>
+        </motion.div>
 
         <h1
-          className={`${robotoCondensed.className} mt-3 text-6xl font-bold uppercase tracking-wide sm:text-7xl md:text-8xl`}
+          className={`${robotoCondensed.className} mt-2 text-6xl font-black uppercase tracking-wider sm:text-8xl md:text-9xl drop-shadow-[0_0_45px_rgba(239,68,68,0.85)]`}
         >
           {NAME_WORDS.map((word, index) => (
             <motion.span
               key={word}
               {...riseIn(0.15 + index * 0.15)}
-              className="mr-4 inline-block last:mr-0"
+              className="mr-5 inline-block text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-300 to-amber-200 last:mr-0"
             >
               {word}
             </motion.span>
           ))}
         </h1>
 
-        <motion.p {...riseIn(0.55)} className="mt-4 max-w-xl text-base text-white/70 sm:text-lg">
-          CSE Undergrad &middot; Full-Stack &amp; AI/ML Developer
+        <motion.p
+          {...riseIn(0.55)}
+          className="mt-4 max-w-2xl text-lg font-medium text-zinc-200 sm:text-xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]"
+        >
+          Full-Stack Software Engineer &amp; Applied AI/ML Developer
         </motion.p>
       </div>
 
@@ -109,13 +116,14 @@ export function IntroSection({ onAdvance }: IntroSectionProps) {
         type="button"
         onClick={() => onAdvance()}
         {...riseIn(1.1)}
-        className="absolute bottom-10 z-10 flex flex-col items-center gap-2 text-xs text-white/60 transition-colors hover:text-white"
+        className="absolute bottom-10 z-10 flex flex-col items-center gap-2 rounded-full border border-red-500/40 bg-black/80 px-6 py-2.5 text-xs font-medium tracking-wide text-red-200 backdrop-blur-md transition-all duration-300 hover:border-red-400 hover:bg-red-500/20 hover:shadow-[0_0_20px_rgba(239,68,68,0.5)] active:scale-95"
       >
-        <span>Scroll to view my portfolio</span>
+        <span className="text-sm font-semibold text-white">Click or Scroll to Enter PC Desktop</span>
         {!prefersReducedMotion && (
           <motion.span
-            animate={{ y: [0, 6, 0] }}
-            transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
+            animate={{ y: [0, 5, 0] }}
+            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+            className="text-red-400"
           >
             ↓
           </motion.span>

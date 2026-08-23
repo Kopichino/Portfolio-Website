@@ -15,7 +15,7 @@ export function Dock() {
       aria-label="Dock"
       onMouseMove={(e) => mouseX.set(e.clientX)}
       onMouseLeave={() => mouseX.set(Infinity)}
-      className="fixed inset-x-0 bottom-3 z-[9999] mx-auto flex w-fit items-end gap-3 rounded-2xl border border-white/10 bg-black/30 px-3 pb-2 pt-2 backdrop-blur-xl"
+      className="fixed inset-x-0 bottom-3 z-[9999] mx-auto flex w-fit items-end gap-3 rounded-2xl border border-sky-400/30 bg-black/60 px-3 pb-2 pt-2 backdrop-blur-2xl shadow-xl shadow-sky-500/10"
     >
       {APP_ORDER.map((id) => {
         const app = APP_REGISTRY[id];

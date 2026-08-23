@@ -45,20 +45,20 @@ export function DesktopIcons() {
             type="button"
             onClick={() => setSelected(appId)}
             onDoubleClick={() => openWindow(appId)}
-            className="flex w-20 flex-col items-center gap-1.5 rounded-lg px-2 py-1.5 outline-none"
+            className="group flex w-20 flex-col items-center gap-1.5 rounded-lg px-2 py-1.5 outline-none transition-all duration-200 hover:scale-105"
           >
             <span
               className={cn(
-                "flex h-12 w-12 items-center justify-center rounded-xl text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]",
-                isSelected ? "bg-sky-400/30 ring-1 ring-sky-300/50" : "",
+                "flex h-12 w-12 items-center justify-center rounded-2xl text-white transition-all duration-200 drop-shadow-[0_4px_12px_rgba(0,0,0,0.6)] bg-white/10 border border-white/15 backdrop-blur-md group-hover:border-sky-400/60 group-hover:bg-sky-500/25 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.5)]",
+                isSelected ? "bg-sky-500/35 ring-2 ring-sky-300 shadow-[0_0_25px_rgba(56,189,248,0.7)]" : "",
               )}
             >
-              <Icon className="h-8 w-8" strokeWidth={1.5} />
+              <Icon className="h-6 w-6 text-sky-200 transition-colors group-hover:text-white" strokeWidth={1.8} />
             </span>
             <span
               className={cn(
-                "rounded px-1.5 py-0.5 text-center text-xs font-medium text-white [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]",
-                isSelected ? "bg-sky-500/70" : "",
+                "rounded px-2 py-0.5 text-center text-xs font-semibold text-white backdrop-blur-md transition-all duration-200 [text-shadow:0_1px_4px_rgba(0,0,0,0.9)]",
+                isSelected ? "bg-sky-500/80 shadow-md shadow-sky-500/50" : "bg-black/40 group-hover:bg-black/70",
               )}
             >
               {label}
