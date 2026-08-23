@@ -36,6 +36,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# raw video sources (not meant for git history — only the extracted
+# public/frames/hero output and public/video/hero-mobile.mp4 get committed)
+/scratch/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
